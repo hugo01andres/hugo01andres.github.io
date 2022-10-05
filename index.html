@@ -4,15 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hugo01andres</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
+    <title>Hugo Andres Martinez Guzman - Portfolio</title>
 </head>
 <body>
-    <header>
-        <h1>Hugo Andres Martinez Guzman</h1>
+    <header id="mainheader">
+        <nav id="navbar">
+            <div class="container">
+                <a href="#mainheader" class="logo"><img src="/img/hugo.png" alt=""></a>
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="showcase">
+            <div class="container">
+                <a href="https://github.com/hugo01andres?tab=repositories" class="btn btn-outline">See Projects</a>
+            </div>
+        </div>
     </header>
-    <div>
-        <p>Apenas crearemos mi portafolio, si ves esto gracias</p>
-    </div>
+    
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-row">
+                <div class="projects-row-detail">
+                    <img src="/img/portfolio-1.jpg" alt="">
+                </div>
+                <div class="projects-row-detail">
+                    <img src="/img/portfolio-2.jpg" alt="">
+                </div>
+                <div class="projects-row-detail">
+                    <img src="/img/portfolio-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About</h2>
+            <div class="about-row">
+                <div class="about-row-experience">
+                    <h4>Experience</h4>
+                    <p class="large">Python Developer</p>
+                    <p class="large">MySQL</p>
+                    <p class="large">Data Scientist</p>
+                </div>
+                <div class="about-row-me">
+                    <h4>About me</h4>
+                    <p>I challenge myself on a different living environment with 
+                        a completely new language not only on my ordinary daily things 
+                        but on my school and Epitech projects.
+                         I achieve my goal of completing good the semester and making nice friendship</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+
+            <div class="contact-row">
+                <div class="contact-row-icon">
+                    <img src="/img/icon-address.png" alt="">
+                    <p>Monterrey, México</p>
+                </div>
+
+                <div class="contact-row-icon">
+                    <img src="/img/icon-mail.png" alt="">
+                    <p>hugoandres01@live.com.mx</p>
+                </div>
+
+                <div class="contact-row-icon">
+                    <img src="/img/icon-phone.png" alt="">
+                    <p>81 22 10 32 66</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="mainfooter">
+        <div class="container">
+            <a href="https://www.instagram.com/hugo01andres/" class="instagram-follow-button">
+                <img src="/img/instagram.png" alt=""></a>
+                <a href="www.linkedin.com/in/hugo-martinez-53979a184" class="linkedin-follow-button">
+                    <img src="/img/linkedin.png" alt=""></a>
+                    <a href="https://github.com/hugo01andres?tab=repositories" class="github-follow-button">
+                        <img src="/img/signo-de-github.png" alt=""></a>
+        </div>
+        
+    </footer>
+    
 
 </body>
 </html>
