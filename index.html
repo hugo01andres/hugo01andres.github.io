@@ -1,106 +1,534 @@
 <!DOCTYPE html>
+<!--LAS IMAGENES LAS EDITE EN WORD 10 x 14-->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
-    <title>Hugo Andres Martinez Guzman - Portfolio</title>
-</head>
-<body>
-    <header id="mainheader">
-        <nav id="navbar">
-            <div class="container">
-                <a href="#mainheader" class="logo"><img src="/img/hugo.png" alt=""></a>
-                <ul>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Hugo Martinez - Portfolio</title>
+  </head>
+  <body>
+    <!--MENU ENCABEZADO-->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Hugo</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">HOME</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+            <li><a href="#portfolio" onclick="seleccionar()">PROJECTS</a></li>
+            <li><a href="#contact" onclick="seleccionar()">CONTACT</a></li>
+          </ul>
         </nav>
-        <div id="showcase">
-            <div class="container">
-                <a href="https://github.com/hugo01andres?tab=repositories" class="btn btn-outline">See Projects</a>
-            </div>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
         </div>
-    </header>
-    
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-row">
-                <div class="projects-row-detail">
-                    <img src="/img/portfolio-1.jpg" alt="">
+      </header>
+    </div>
+
+    <!-- SECCION INICIO-->
+    <section id="inicio" class="inicio">
+      <div class="contenedor-banner">
+        <div class="contenedor-img">
+          <img src="img/mi_foto.png" alt="mi_imagen" />
+        </div>
+        <h1>Hugo Mtz</h1>
+        <h2>Software Developer Engineer - Fullstack/Data Scientist</h2>
+        <div class="redes">
+          <a href="https://github.com/hugo01andres" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/hugo01andres/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://twitter.com/hugo01andres" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/hugo01andres/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/hugoandres.martinezguzman" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!--SECION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>About me</h2>
+        <p>
+          <span>Hello I'm Hugo.</span> I love to programm, my favourite thing in this career is to solve problems.
+          I have a lot of inspirations in my life, one is to work in the greatest companies like Meta, Tesla, Microsoft, etc.
+        </p>
+
+        <div class="fila">
+          <!-- DATOS PERSONALES-->
+          <div class="col">
+            <h3>Personal Data</h3>
+            <ul>
+              <li>
+                <strong>Birthday</strong>
+                11-09-2001
+              </li>
+              <li>
+                <strong>Phone</strong>
+                <a
+                  href="https://api.whatsapp.com/send?phone=8122103266"
+                  target="_blank"
+                  >+52 8122-1032-66</a
+                >
+              </li>
+              <li>
+                <strong>Email</strong>
+                <a href="mailto:hugoandres01@live.com.mx"
+                  >hugoandres01@live.com.mx</a
+                >
+              </li>
+              <li>
+                <strong>Website</strong>
+                <a target="_blank" href="https://hugoandres.com/"
+                  >https://hugoandres.com/</a
+                >
+              </li>
+              <li>
+                <strong>Nationality</strong>
+                <span>Mexican</span>
+              </li>
+            </ul>
+          </div>
+
+          <!--INTERESTED-->
+          <div class="col">
+            <h3>Interested</h3>
+            <div class="contenedor-intereses">
+              <div class="intereses">
+                <i class="fa-solid fa-futbol"></i>
+                <span>SOCCER</span>
+              </div>
+              <div class="intereses">
+                <i class="fa-solid fa-car"></i>
+                <span>CARS</span>
+              </div>
+              <div class="intereses">
+                <i class="fa-solid fa-plane"></i>
+                <span>TRAVEL</span>
+              </div>
+              <div class="intereses">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSIC</span>
+              </div>
+              <div class="intereses">
+                <i class="fa-brands fa-apple"></i>
+                <span>APPLE</span>
+              </div>
+              <div class="intereses">
+                <i class="fa-brands fa-linux"></i>
+                <span>LINUX</span>
+              </div>
+              <div class="intereses">
+                <i class="fa-solid fa-person-hiking"></i>
+                <span>HIKING</span>
+              </div>
+              <div class="intereses">
+                <i class="fa-solid fa-film"></i>
+                <span>MOVIES</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button>
+          <a href="cv/CV Hugo Martinez English.pdf">Download CV</a>
+          <i class="fa-solid fa-download"></i>
+          <span class="overlay"></span>
+        </button>
+      </div>
+    </section>
+
+    <!--SECCION SKILLS-->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!-- TECHNICLA SKILL-->
+          <div class="col">
+            <h3>Technical Skills</h3>
+
+            <!--P Y T H O N-->
+            <div class="skill">
+              <span>PYTHON</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>94%</span>
                 </div>
-                <div class="projects-row-detail">
-                    <img src="/img/portfolio-2.jpg" alt="">
+              </div>
+            </div>
+
+            <!--H T M L - & - CSS-->
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>78%</span>
                 </div>
-                <div class="projects-row-detail">
-                    <img src="/img/portfolio-3.jpg" alt="">
+              </div>
+            </div>
+
+            <!--JAVASCRIPT-->
+            <div class="skill">
+              <span>JAVSCRIPT</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>58%</span>
                 </div>
+              </div>
+            </div>
+
+            <!-- JAVA -->
+            <div class="skill">
+              <span>JAVA</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>88%</span>
+                </div>
+              </div>
+            </div>
+
+            <!--SQL-->
+            <div class="skill">
+              <span>SQL</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- M O N G O - DB-->
+            <div class="skill">
+              <span>MONGO DB</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>64%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- ANDROID -->
+            <div class="skill">
+              <span>ANDROID</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- IOS -->
+            <div class="skill">
+              <span>IOS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROFESSIONAL SKILL-->
+          <div class="col">
+            <h3>Professional Skills</h3>
+
+            <!--C O M M U N I C A T I O N-->
+            <div class="skill">
+              <span>COMMUNICATION</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>98%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- E N G L I S H-->
+            <div class="skill">
+              <span>ENGLISH</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+
+            <!--S C R U M-->
+            <div class="skill">
+              <span>SCRUM</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>94%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- S P A N I S H-->
+            <div class="skill">
+              <span>SPANISH</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>100%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- RESPONSIBILITY -->
+            <div class="skill">
+              <span>RESPONSIBILITY</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>100%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- F R E N C H -->
+            <div class="skill">
+              <span>FRENCH</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>42%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- N E G O T I A T O R -->
+            <div class="skill">
+              <span>NEGOTIATOR</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>91%</span>
+                </div>
+              </div>
+            </div>
+
+            <!--I B M-->
+            <div class="skill">
+              <span>INTERNATIONAL BUSINESS MANAGEMENT</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Education</h3>
+            <div class="item izq">
+              <h4>Software Developer Engineer</h4>
+              <span class="casa">TecMilenio University</span>
+              <span class="fecha">2020 - 2024</span>
+              <p>
+                Here I practice coding languages like Java, C++, Python and Swift. Also here I got the certifications of
+                Big Data, Mobile Developer and International Business Management.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+                <h4>Software Developer Engineer</h4>
+                <span class="casa">Epitech -European Insitute Education</span>
+                <span class="fecha">Jan 2022 - June 2022</span>
+                <p>
+                  I got a international experience in Toulouse France, where I challenged my knowledge in C++ creating a lot of AI in this institue. Also I learned about another culture
+                  and a new language (French).
+                </p>
+                <div class="conectori">
+                  <div class="circuloi"></div>
+                </div>
+              </div>
+              
+          </div>
+
+          <div class="col derecha">
+            <h3>Job Experience</h3>
+            <div class="item der">
+              <h4>Junior Developer</h4>
+              <span class="casa">Moviro</span>
+              <span class="fecha">2023 - Current Job</span>
+              <p>
+                Here I'm making Python API's with teammates, for big companies.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+                <h4>IT Support Tecmilenio</h4>
+                <span class="casa">TecMilenio University</span>
+                <span class="fecha">2022 - 2023</span>
+                <p>
+                  I worked in the Security Area as an Dataa Analyst where I make to them a webpage in SharePoint. Also I was in charge of giving support to the SharePoint and to the system we made in PowerBI.
+                </p>
+                <div class="conectord">
+                  <div class="circulod"></div>
+                </div>
+              </div>
+              
+              
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO   -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+
+                <div class="proyecto">
+                    <img  src="img/badabit.png" alt="google">
+                    <div class="descripcion">
+                      <h3>Badabit</h3>
+                    </div>
+                    <div class="ver_codigo">
+                      <a target="_blank" href="https://github.com/hugo01andres/badabit">View code</a>
+                      <a target="_blank" href="https://hugoandres.com/badabit/">See website</a>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/firstWP.png" alt="">
+                    <div class="descripcion">
+                      <h3>Easy page</h3>
+                    </div>
+                    <div class="ver_codigo">
+                      <a target="_blank" href="https://github.com/hugo01andres/MyFirstWebPage">View code</a>
+                      <a target="_blank" href="https://hugoandres.com/MyFirstWebPage/">See website</a>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/exercise_card.png" alt="">
+                    <div class="descripcion">
+                      <h3>Exercise HTML&CSS</h3>
+                    </div>
+                    <div class="ver_codigo">
+                      <a target="_blank" href="https://github.com/hugo01andres/CardFrontendExercise">View code</a>
+                      <a target="_blank" href="https://hugoandres.com/CardFrontendExercise/">See website</a>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/recreate_wp.png" alt="">
+                    
+                    <div class="descripcion">
+                      <h3>Recreate Page</h3>
+                    </div>
+                    <div class="ver_codigo">
+                      <a target="_blank" href="https://github.com/hugo01andres/MiSegundoSitioWeb">View code</a>
+                      <a target="_blank" href="https://hugoandres.com/MiSegundoSitioWeb/">See website</a>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                   <img src="img/safo_sexshop.png"  alt="Safo">   
+                   <div class="descripcion">
+                    <h3>SexShop for a business</h3>
+                  </div>
+                  <div class="ver_codigo">
+                    <a target="_blank" href="https://github.com/hugo01andres/SAFO-SEXSHOP">View code</a>
+                    <a target="_blank" href="https://hugoandres.com/SAFO-SEXSHOP/">See website</a>
+                  </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/fav_places.png" alt="">
+                    <div class="descripcion">
+                      <h3>Exercise HTML&CSS</h3>
+                    </div>
+                    <div class="ver_codigo">
+                      <a target="_blank" href="https://github.com/hugo01andres/My-favourite-places">View code</a>
+                      <a target="_blank" href="https://hugoandres.com/My-favourite-places/">See website</a>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                  <img src="img/Api_Flask.png" alt="">
+                  <div class="descripcion">
+                    <h3>First API</h3>
+                  </div>
+                  <div class="ver_codigo">
+                    <a target="_blank" href="https://github.com/hugo01andres/Flask-REST-API">View only code</a>
+                   <!--<a href="">See website</a>--> 
+                  </div>
+                </div>
+
+              <div class="proyecto">
+                <img src="img/gestor_restaurant.png" alt="">
+                <div class="descripcion">
+                  <h3>Task Manager</h3>
+                </div>
+                <div class="ver_codigo">
+                  <a target="_blank" href="https://github.com/hugo01andres/Gestor-de-Tareas-con-Flask">View only code</a>
+                 <!--<a href="">See website</a>--> 
+                </div>
+              </div>
+
+              <div class="proyecto">
+                <img src="img/first_mach_learn.png" alt="">
+                <div class="descripcion">
+                  <h3>Machine Learning</h3>
+                </div>
+                <div class="ver_codigo">
+                  <a target="_blank" href="https://github.com/hugo01andres/Machine-Learning-Phrases">View only code</a>
+                 <!--<a href="">See website</a>--> 
+                </div>
+              </div>
+
+                
+
+
             </div>
         </div>
     </section>
 
-    <section id="about">
-        <div class="container">
-            <h2>About</h2>
-            <div class="about-row">
-                <div class="about-row-experience">
-                    <h4>Experience</h4>
-                    <p class="large">Python Developer</p>
-                    <p class="large">MySQL</p>
-                    <p class="large">Data Scientist</p>
-                </div>
-                <div class="about-row-me">
-                    <h4>About me</h4>
-                    <p>I challenge myself on a different living environment with 
-                        a completely new language not only on my ordinary daily things 
-                        but on my school and Epitech projects.
-                         I achieve my goal of completing good the semester and making nice friendship</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-
-            <div class="contact-row">
-                <div class="contact-row-icon">
-                    <img src="/img/icon-address.png" alt="">
-                    <p>Monterrey, México</p>
-                </div>
-
-                <div class="contact-row-icon">
-                    <img src="/img/icon-mail.png" alt="">
-                    <p>hugoandres01@live.com.mx</p>
-                </div>
-
-                <div class="contact-row-icon">
-                    <img src="/img/icon-phone.png" alt="">
-                    <p>81 22 10 32 66</p>
-                </div>
-            </div>
+    <!-- SECCION CONTACTO -->
+    <footer id="contact">
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/hugo01andres"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/hugo01andres/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/hugo01andres"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/hugo01andres/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/hugoandres.martinezguzman"><i class="fa-brands fa-facebook"></i></a>
+            <a href="mailto:hugoandres01@live.com.mx"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        <div>
 
         </div>
-    </section>
-
-    <footer id="mainfooter">
-        <div class="container">
-            <a href="https://www.instagram.com/hugo01andres/" class="instagram-follow-button">
-                <img src="/img/instagram.png" alt=""></a>
-                <a href="https://www.linkedin.com/in/hugo-martinez-53979a184/" class="linkedin-follow-button">
-                    <img src="/img/linkedin.png" alt=""></a>
-                    <a href="https://github.com/hugo01andres?tab=repositories" class="github-follow-button">
-                        <img src="/img/signo-de-github.png" alt=""></a>
-        </div>
-        
     </footer>
-    
 
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
