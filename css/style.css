@@ -690,8 +690,8 @@ html{
 .portfolio-hover:hover .portfolio-description {
     padding-top: 10px;
     color: #1CB698;
-    font-size: 24px; /* Cambia el tamaño de fuente según lo desees */
-    transition: font-size 0.3s ease; /* Añade una transición suave */
+    font-size: 24px;
+    transition: font-size 0.3s ease; 
 }
 .portfolio-hover:hover .portfolio-links{
     cursor: pointer;
@@ -704,6 +704,18 @@ html{
 /* Agrega un estilo para mostrar la nueva descripción al hacer hover */
 .portfolio-hover:hover .portfolio-description-hidden {
     display: block;
+}
+.portfolio-image:hover .portfolio-description{
+    padding-top: 10px;
+    color: #1CB698;
+    font-size: 24px; 
+    transition: font-size 0.3s ease; 
+}
+.portfolio-image:hover .portfolio-description-hidden{
+    display: block;
+}
+.portfolio-image:hover .separator {
+    color: #99c7f7;
 }
 
 
