@@ -689,7 +689,7 @@ html{
     margin: -10px auto;
     display: none;
 }
-.portfolio-hover:hover .portfolio-description {
+/* .portfolio-hover:hover .portfolio-description {
     padding-top: 10px;
     color: #1CB698;
     font-size: 24px;
@@ -701,10 +701,10 @@ html{
 }
 .portfolio-hover:hover .separator {
     color: #99c7f7;
-}
+} */
 
 /* Agrega un estilo para mostrar la nueva descripción al hacer hover */
-.portfolio-hover:hover .portfolio-description-hidden {
+/* .portfolio-hover:hover .portfolio-description-hidden {
     display: block;
 }
 .portfolio-image:hover .portfolio-description{
@@ -718,7 +718,7 @@ html{
 }
 .portfolio-image:hover .separator {
     color: #99c7f7;
-}
+} */
 
 
 /* -------FOOTER ----------*/
@@ -789,7 +789,7 @@ footer .arriba{
         pointer-events: auto; /* Habilita eventos de puntero en dispositivos móviles */
         position: static; /* Restaura la posición estática del elemento */
     }
-    .portfolio-item:hover .portfolio-description,
+    /* .portfolio-item:hover .portfolio-description,
     .portfolio-item:hover .portfolio-links {
       padding-top: 0;
       color: inherit;
@@ -800,7 +800,7 @@ footer .arriba{
     }
     .hidden-on-mobile {
         display: block !important;
-      }
+      } */
     
 }
 @media screen and (max-width:700px){
