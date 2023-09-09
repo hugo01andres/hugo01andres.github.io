@@ -631,9 +631,29 @@ html{
     text-align: center;
 }
 .portfolio-image {
-    max-width: 100%;
-    height: auto;
+    width: 90%; 
+    height: 65%;
+    display: block;
     border-radius: 10px;
+}
+.separator {
+    margin: 20px 0;
+    color: #1CB698;
+    font-size: 24px;
+}
+.subtitle{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+
+ 
+}
+.portfolio-image-container {
+    width: 100%; /* Establece el ancho al 100% */
+    max-width: 400px; /* Establece el ancho máximo según tus preferencias */
+    margin: 0 auto; /* Centra el contenedor */
+    overflow: hidden; /* Oculta cualquier desbordamiento de la imagen */
+    position: relative; /* Establece una posición relativa para permitir superponer la descripción */
 }
 .portfolio-description {
     margin-top: 10px;
@@ -662,6 +682,9 @@ html{
 }
 /* Agrega un estilo para la nueva descripción oculta */
 .portfolio-description-hidden {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
     display: none;
 }
 .portfolio-item:hover .portfolio-description {
@@ -670,11 +693,15 @@ html{
     font-size: 24px; /* Cambia el tamaño de fuente según lo desees */
     transition: font-size 0.3s ease; /* Añade una transición suave */
 }
+.portfolio-item:hover .separator {
+    color: #99c7f7;
+}
 
 /* Agrega un estilo para mostrar la nueva descripción al hacer hover */
 .portfolio-item:hover .portfolio-description-hidden {
     display: block;
 }
+
 
 /* -------FOOTER ----------*/
 
