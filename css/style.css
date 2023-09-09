@@ -657,8 +657,9 @@ html{
 }
 .portfolio-description {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
+    padding: 30px;
 }
 .portfolio-links {
     margin-top: 20px;
@@ -684,7 +685,7 @@ html{
 .portfolio-description-hidden {
     text-align: center;
     width: 90%;
-    margin: 0 auto;
+    margin: -10px auto;
     display: none;
 }
 .portfolio-hover:hover .portfolio-description {
