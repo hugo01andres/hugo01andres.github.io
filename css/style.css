@@ -675,11 +675,11 @@ html{
 .portfolio-links a:hover {
     background-color: #555; /* Cambia el color de fondo en hover */
 }
-.portfolio-item:hover .portfolio-image {
-    transform: scale(1.1); /* Cambia el valor según lo desees */
-    filter: brightness(0.7); /* Reduce el brillo al 70% */
-    transition: transform 0.3s ease, filter 0.3s ease; /* Añade una transición suave para ambas propiedades */
-}
+/* .portfolio-item:hover .portfolio-image {
+    transform: scale(1.1); 
+    filter: brightness(0.7); 
+    transition: transform 0.3s ease, filter 0.3s ease;  
+} */
 /* Agrega un estilo para la nueva descripción oculta */
 .portfolio-description-hidden {
     text-align: center;
