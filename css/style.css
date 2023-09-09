@@ -663,6 +663,7 @@ html{
 }
 .portfolio-links {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .portfolio-links a {
     display: inline-block;
@@ -838,18 +839,7 @@ footer .arriba{
     .portfolio-links a {
         pointer-events: auto; /* Habilita eventos de puntero en dispositivos móviles */
         position: static; /* Restaura la posición estática del elemento */
+        margin-bottom: 20px;
     }
-    .portfolio-item:hover .portfolio-description,
-    .portfolio-item:hover .portfolio-links {
-      padding-top: 0;
-      color: inherit;
-      font-size: inherit;
-      transition: none;
-      cursor: auto;
-      margin-bottom: 0;
-    }
-    .hidden-on-mobile {
-        display: block !important;
-      }
     
 }
