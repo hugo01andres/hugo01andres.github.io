@@ -687,22 +687,22 @@ html{
     margin: 0 auto;
     display: none;
 }
-.portfolio-item:hover .portfolio-description {
+.portfolio-hover:hover .portfolio-description {
     padding-top: 10px;
     color: #1CB698;
     font-size: 24px; /* Cambia el tamaño de fuente según lo desees */
     transition: font-size 0.3s ease; /* Añade una transición suave */
 }
-.portfolio-item:hover .portfolio-links{
+.portfolio-hover:hover .portfolio-links{
     cursor: pointer;
     margin-bottom: 80px;
 }
-.portfolio-item:hover .separator {
+.portfolio-hover:hover .separator {
     color: #99c7f7;
 }
 
 /* Agrega un estilo para mostrar la nueva descripción al hacer hover */
-.portfolio-item:hover .portfolio-description-hidden {
+.portfolio-hover:hover .portfolio-description-hidden {
     display: block;
 }
 
