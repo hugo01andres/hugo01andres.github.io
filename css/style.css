@@ -637,7 +637,8 @@ html{
 }
 .portfolio-description {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: bold;
 }
 .portfolio-links {
     margin-top: 20px;
@@ -653,6 +654,26 @@ html{
 }
 .portfolio-links a:hover {
     background-color: #555; /* Cambia el color de fondo en hover */
+}
+.portfolio-item:hover .portfolio-image {
+    transform: scale(1.1); /* Cambia el valor según lo desees */
+    filter: brightness(0.7); /* Reduce el brillo al 70% */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Añade una transición suave para ambas propiedades */
+}
+/* Agrega un estilo para la nueva descripción oculta */
+.portfolio-description-hidden {
+    display: none;
+}
+.portfolio-item:hover .portfolio-description {
+    padding-top: 10px;
+    color: #1CB698;
+    font-size: 24px; /* Cambia el tamaño de fuente según lo desees */
+    transition: font-size 0.3s ease; /* Añade una transición suave */
+}
+
+/* Agrega un estilo para mostrar la nueva descripción al hacer hover */
+.portfolio-item:hover .portfolio-description-hidden {
+    display: block;
 }
 
 /* -------FOOTER ----------*/
