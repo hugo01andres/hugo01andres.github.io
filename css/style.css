@@ -777,13 +777,16 @@ footer .arriba{
     }
     .portfolio-item:hover .portfolio-description,
     .portfolio-item:hover .portfolio-links {
-        padding-top: 0;
-        color: inherit;
-        font-size: inherit;
-        transition: none;
-        cursor: auto;
-        margin-bottom: 0;
+      padding-top: 0;
+      color: inherit;
+      font-size: inherit;
+      transition: none;
+      cursor: auto;
+      margin-bottom: 0;
     }
+    .hidden-on-mobile {
+        display: block !important;
+      }
     
 }
 @media screen and (max-width:700px){
@@ -825,13 +828,15 @@ footer .arriba{
     }
     .portfolio-item:hover .portfolio-description,
     .portfolio-item:hover .portfolio-links {
-        padding-top: 0;
-        color: inherit;
-        font-size: inherit;
-        transition: none;
-        cursor: auto;
-        margin-bottom: 0;
+      padding-top: 0;
+      color: inherit;
+      font-size: inherit;
+      transition: none;
+      cursor: auto;
+      margin-bottom: 0;
     }
-
+    .hidden-on-mobile {
+        display: block !important;
+      }
     
 }
