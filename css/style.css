@@ -657,11 +657,13 @@ html{
 }
 .portfolio-description {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
+    padding: 30px;
 }
 .portfolio-links {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .portfolio-links a {
     display: inline-block;
@@ -672,35 +674,51 @@ html{
     color: #fff;
     border-radius: 5px;
 }
-.portfolio-links a:hover {
-    background-color: #555; /* Cambia el color de fondo en hover */
-}
-.portfolio-item:hover .portfolio-image {
-    transform: scale(1.1); /* Cambia el valor según lo desees */
-    filter: brightness(0.7); /* Reduce el brillo al 70% */
-    transition: transform 0.3s ease, filter 0.3s ease; /* Añade una transición suave para ambas propiedades */
-}
+/* .portfolio-links a:hover {
+    background-color: #555; /* Cambia el color de fondo en hover 
+} */
+/* .portfolio-item:hover .portfolio-image {
+    transform: scale(1.1); 
+    filter: brightness(0.7); 
+    transition: transform 0.3s ease, filter 0.3s ease;  
+} */
 /* Agrega un estilo para la nueva descripción oculta */
 .portfolio-description-hidden {
     text-align: center;
     width: 90%;
-    margin: 0 auto;
+    margin: -10px auto;
     display: none;
 }
-.portfolio-item:hover .portfolio-description {
+/* .portfolio-hover:hover .portfolio-description {
     padding-top: 10px;
     color: #1CB698;
-    font-size: 24px; /* Cambia el tamaño de fuente según lo desees */
-    transition: font-size 0.3s ease; /* Añade una transición suave */
+    font-size: 24px;
+    transition: font-size 0.3s ease; 
 }
-.portfolio-item:hover .separator {
+.portfolio-hover:hover .portfolio-links{
+    cursor: pointer;
+    margin-bottom: 80px;
+}
+.portfolio-hover:hover .separator {
     color: #99c7f7;
-}
+} */
 
 /* Agrega un estilo para mostrar la nueva descripción al hacer hover */
-.portfolio-item:hover .portfolio-description-hidden {
+/* .portfolio-hover:hover .portfolio-description-hidden {
     display: block;
 }
+.portfolio-image:hover .portfolio-description{
+    padding-top: 10px;
+    color: #1CB698;
+    font-size: 24px; 
+    transition: font-size 0.3s ease; 
+}
+.portfolio-image:hover .portfolio-description-hidden{
+    display: block;
+}
+.portfolio-image:hover .separator {
+    color: #99c7f7;
+} */
 
 
 /* -------FOOTER ----------*/
@@ -767,6 +785,22 @@ footer .arriba{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
+    .portfolio-links a {
+        pointer-events: auto; /* Habilita eventos de puntero en dispositivos móviles */
+        position: static; /* Restaura la posición estática del elemento */
+    }
+    /* .portfolio-item:hover .portfolio-description,
+    .portfolio-item:hover .portfolio-links {
+      padding-top: 0;
+      color: inherit;
+      font-size: inherit;
+      transition: none;
+      cursor: auto;
+      margin-bottom: 0;
+    }
+    .hidden-on-mobile {
+        display: block !important;
+      } */
     
 }
 @media screen and (max-width:700px){
@@ -802,6 +836,10 @@ footer .arriba{
     .portfolio-grid {
         grid-template-columns: 1fr;
     }
-
+    .portfolio-links a {
+        pointer-events: auto; /* Habilita eventos de puntero en dispositivos móviles */
+        position: static; /* Restaura la posición estática del elemento */
+        margin-bottom: 20px;
+    }
     
 }
