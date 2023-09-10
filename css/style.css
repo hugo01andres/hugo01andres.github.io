@@ -674,51 +674,6 @@ html{
     color: #fff;
     border-radius: 5px;
 }
-/* .portfolio-links a:hover {
-    background-color: #555; /* Cambia el color de fondo en hover 
-} */
-/* .portfolio-item:hover .portfolio-image {
-    transform: scale(1.1); 
-    filter: brightness(0.7); 
-    transition: transform 0.3s ease, filter 0.3s ease;  
-} */
-/* Agrega un estilo para la nueva descripción oculta */
-.portfolio-description-hidden {
-    text-align: center;
-    width: 90%;
-    margin: -10px auto;
-    display: none;
-}
-/* .portfolio-hover:hover .portfolio-description {
-    padding-top: 10px;
-    color: #1CB698;
-    font-size: 24px;
-    transition: font-size 0.3s ease; 
-}
-.portfolio-hover:hover .portfolio-links{
-    cursor: pointer;
-    margin-bottom: 80px;
-}
-.portfolio-hover:hover .separator {
-    color: #99c7f7;
-} */
-
-/* Agrega un estilo para mostrar la nueva descripción al hacer hover */
-/* .portfolio-hover:hover .portfolio-description-hidden {
-    display: block;
-}
-.portfolio-image:hover .portfolio-description{
-    padding-top: 10px;
-    color: #1CB698;
-    font-size: 24px; 
-    transition: font-size 0.3s ease; 
-}
-.portfolio-image:hover .portfolio-description-hidden{
-    display: block;
-}
-.portfolio-image:hover .separator {
-    color: #99c7f7;
-} */
 
 
 /* -------FOOTER ----------*/
