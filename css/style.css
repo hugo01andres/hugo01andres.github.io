@@ -674,9 +674,9 @@ html{
     color: #fff;
     border-radius: 5px;
 }
-.portfolio-links a:hover {
-    background-color: #555; /* Cambia el color de fondo en hover */
-}
+/* .portfolio-links a:hover {
+    background-color: #555; /* Cambia el color de fondo en hover 
+} */
 /* .portfolio-item:hover .portfolio-image {
     transform: scale(1.1); 
     filter: brightness(0.7); 
