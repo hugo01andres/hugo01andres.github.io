@@ -44,22 +44,4 @@ function efectoHabilidades(){
 window.onscroll = function(){
     efectoHabilidades();
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-      var portfolioItems = document.querySelectorAll('.portfolio-item');
-  
-      portfolioItems.forEach(function(item) {
-        item.addEventListener('mouseover', function() {
-          this.querySelector('.portfolio-description').style = 'padding-top: 0; color: inherit; font-size: inherit;';
-          this.querySelector('.portfolio-links').style = 'cursor: auto; margin-bottom: 0;';
-        });
-  
-        item.addEventListener('mouseout', function() {
-          this.querySelector('.portfolio-description').style = '';
-          this.querySelector('.portfolio-links').style = '';
-        });
-      });
-    }
-  });
   
