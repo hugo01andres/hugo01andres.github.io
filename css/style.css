@@ -740,10 +740,10 @@ footer .arriba{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
-    .portfolio-links a {
-        pointer-events: auto; /* Habilita eventos de puntero en dispositivos móviles */
-        position: static; /* Restaura la posición estática del elemento */
-    }
+    /* .portfolio-links a {
+        pointer-events: auto;
+        position: static;
+    } */
     /* .portfolio-item:hover .portfolio-description,
     .portfolio-item:hover .portfolio-links {
       padding-top: 0;
