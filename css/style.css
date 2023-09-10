@@ -740,7 +740,9 @@ footer .arriba{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
-    
+    .portfolio-links {
+        margin-bottom: 200px;
+    }
 }
 @media screen and (max-width:700px){
     .sobremi .fila{
@@ -776,7 +778,7 @@ footer .arriba{
         grid-template-columns: 1fr;
     }
     .portfolio-links {
-        margin-bottom: 90px;
+        margin-bottom: 200px;
     }
     
 }
